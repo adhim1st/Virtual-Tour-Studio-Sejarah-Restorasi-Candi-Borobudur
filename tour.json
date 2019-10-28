@@ -1,0 +1,384 @@
+{
+	"default": {
+		"author": "Balai Konservasi Borobudur",
+		"firstScene": "depan0",
+		"sceneFadeDuration": 1500,
+		"autoLoad": true,
+		"autoRotate": -0.2,
+		"autoRotateInactivityDelay": 2000
+	},
+	"scenes": {
+		"depan0": {
+			"title": "Halaman Depan",
+			"type": "multires",
+			"multiRes": {
+				"basePath": "./depan0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -290,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer",
+				"sceneId": "masuk0"
+			}, {
+				"pitch": -6,
+				"yaw": -61,
+				"type": "scene",
+				"text": "Menuju Ruang Kerasitekturan Candi",
+				"sceneId": "keluar0"
+			}]
+		},
+		"masuk0": {
+			"title": "Pintu Masuk",
+			"type": "multires",
+			"pitch": -2,
+			"yaw": -162,
+			"multiRes": {
+				"basePath": "./masuk0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -2,
+				"yaw": -162,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer Lorong A",
+				"sceneId": "temporer0"
+			}, {
+				"pitch": -10,
+				"yaw": 372,
+				"type": "scene",
+				"text": "Menuju Halaman Depan",
+				"sceneId": "depan0"
+			}, {
+				"pitch": -8,
+				"yaw": -238,
+				"type": "scene",
+				"text": "Menuju Ruang Sejarah",
+				"sceneId": "sejarah0"
+			}]
+		},
+		"temporer0": {
+			"title": "Ruang Temporer Lorong A",
+			"type": "multires",
+			"pitch": -2,
+			"yaw": 360,
+			"multiRes": {
+				"basePath": "./temporer0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -2,
+				"yaw": 360,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer Lorong B",
+				"sceneId": "temporer1"
+			}, {
+				"pitch": -2,
+				"yaw": -180,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer",
+				"sceneId": "masuk0"
+			}]
+		},
+		"temporer1": {
+			"title": "Ruang Temporer Lorong B",
+			"type": "multires",
+			"pitch": -2,
+			"yaw": 360,
+			"multiRes": {
+				"basePath": "./temporer1",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -2,
+				"yaw": -184,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer Lorong A",
+				"sceneId": "temporer0"
+			}]
+		},
+		"arkeologi0": {
+			"title": "Ruang Arkeologi",
+			"type": "multires",
+							"pitch": -6,
+				"yaw": -250,
+			"multiRes": {
+				"basePath": "./arkeologi0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -44,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong B",
+				"sceneId": "arsitektur1"
+			}]
+		},
+		"arsitektur0": {
+			"title": "Ruang Kearsitekturan Candi Lorong A",
+			"type": "multires",
+			"pitch": -6,
+			"yaw": -360,
+			"multiRes": {
+				"basePath": "./arsitektur0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -358,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong B",
+				"sceneId": "arsitektur1"
+			}, {
+				"pitch": -6,
+				"yaw": -180,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi",
+				"sceneId": "keluar0"
+			}]
+		},
+		"arsitektur1": {
+			"title": "Ruang Kearsitekturan Candi Lorong B",
+			"type": "multires",
+			"multiRes": {
+				"basePath": "./arsitektur1",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -8,
+				"yaw": -308,
+				"type": "scene",
+				"text": "Menuju Ruang Dokumentasi Restorasi",
+				"sceneId": "dokumentasi0"
+			}, {
+				"pitch": -8,
+				"yaw": -57,
+				"type": "scene",
+				"text": "Menuju Ruang Tekno Arkeologi",
+				"sceneId": "tekno arkeologi0"
+			}, {
+				"pitch": -4,
+				"yaw": -182,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong A",
+				"sceneId": "arsitektur0"
+			}, {
+				"pitch": -6,
+				"yaw": -240,
+				"type": "scene",
+				"text": "Menuju Ruang Arkeologi",
+				"sceneId": "arkeologi0"
+			}]
+		},
+		"dokumentasi0": {
+			"title": "Ruang Dokumentasi Restorasi",
+			"type": "multires",
+			"pitch": -6,
+			"yaw": -200,
+			"multiRes": {
+				"basePath": "./dokumentasi0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -360,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong B",
+				"sceneId": "arsitektur1"
+			}]
+		},
+		"tekno arkeologi0": {
+			"title": "Ruang Tekno Arkeologi",
+			"type": "multires",
+			"pitch": -2,
+			"yaw": 310,
+			"multiRes": {
+				"basePath": "./tekno arkeologi0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -102,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong B",
+				"sceneId": "arsitektur1"
+			}, {
+				"pitch": -6,
+				"yaw": -2,
+				"type": "scene",
+				"text": "Menuju Ruang Transisi",
+				"sceneId": "transisi0"
+			}]
+		},
+		"transisi0": {
+			"title": "Ruang Transisi",
+			"type": "multires",
+			"pitch": 4,
+			"yaw": -280,
+			"multiRes": {
+				"basePath": "./transisi0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -350,
+				"type": "scene",
+				"text": "Menuju Ruang Tekno Arkeologi",
+				"sceneId": "tekno arkeologi0"
+			}, {
+				"pitch": -6,
+				"yaw": -180,
+				"type": "scene",
+				"text": "Menuju Ruang Kemiko",
+				"sceneId": "kemiko0"
+			}]
+		},
+		"sejarah0": {
+			"title": "Ruang Sejarah",
+			"type": "multires",
+			"pitch": -20,
+			"yaw": 356,
+			"multiRes": {
+				"basePath": "./sejarah0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -248,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi",
+				"sceneId": "keluar0"
+			}, {
+				"pitch": -8,
+				"yaw": -77,
+				"type": "scene",
+				"text": "Menuju Ruang Temporer",
+				"sceneId": "masuk0"
+			}]
+		},
+		"kemiko0": {
+			"title": "Ruang Kemiko",
+			"type": "multires",
+			"pitch": -6,
+			"yaw": 150,
+			"multiRes": {
+				"basePath": "./kemiko0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -46,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi",
+				"sceneId": "keluar0"
+			}, {
+				"pitch": -6,
+				"yaw": -117,
+				"type": "scene",
+				"text": "Menuju Ruang Transisi",
+				"sceneId": "transisi0"
+			}]
+		},
+		"keluar0": {
+			"title": "Ruang Kearsitekturan Candi",
+			"type": "multires",
+			"pitch": -6,
+			"yaw": -165,
+			"multiRes": {
+				"basePath": "./keluar0",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 3,
+				"cubeResolution": 1296
+			},
+			"hotSpots": [{
+				"pitch": -6,
+				"yaw": -161,
+				"type": "scene",
+				"text": "Menuju Ruang Kearsitekturan Candi Lorong A",
+				"sceneId": "arsitektur0"
+			}, {
+				"pitch": -10,
+				"yaw": -267,
+				"type": "scene",
+				"text": "Menuju Ruang Kemiko",
+				"sceneId": "kemiko0"
+			}, {
+				"pitch": -8,
+				"yaw": -78,
+				"type": "scene",
+				"text": "Menuju Ruang Sejarah",
+				"sceneId": "sejarah0"
+			}, {
+				"pitch": -8,
+				"yaw": -351,
+				"type": "scene",
+				"text": "Menuju Halaman Depan",
+				"sceneId": "depan0"
+			}]
+		}
+	}
+}
